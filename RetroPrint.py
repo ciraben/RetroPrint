@@ -38,7 +38,7 @@ def print(strng = '', sep = ' ',  end = '\n', speed = 1, mod = ''):
 
     if mod in PRINT_COLOURS:
         modifier = str(PRINT_COLOURS[mod])
-    elif isinstance(col, int):
+    elif isinstance(mod, int):
         modifier = str(mod)
     else:
         for c in strng:
